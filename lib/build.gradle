@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.harubyte.mitobi'
+    namespace 'id.aozora.nagdroid'
     compileSdk 34
     buildToolsVersion "34.0.0"
 

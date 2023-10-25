@@ -1,4 +1,4 @@
-package com.harubyte.mitobi;
+package id.aozora.nagdroid;
 
 import android.app.Activity;
 import android.app.Application;
@@ -6,7 +6,7 @@ import android.app.Application.ActivityLifecycleCallbacks;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class MitobiApplication extends Application implements ActivityLifecycleCallbacks {
+public class NagdroidApplication extends Application implements ActivityLifecycleCallbacks {
     @Override
     public void onCreate() {
         super.onCreate();
@@ -19,7 +19,8 @@ public class MitobiApplication extends Application implements ActivityLifecycleC
         
         if (intent.getAction().equals(Intent.ACTION_MAIN)
         && intent.hasCategory(Intent.CATEGORY_LAUNCHER)) {
-            new Mitobi(activity);
+            new Nagdroid(activity)
+            .show();
         }
     }
     

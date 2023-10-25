@@ -29,12 +29,12 @@ jobs:
     - name: Store generated APK file
       uses: actions/upload-artifact@v2
       with:
-        name: Mitobi (APK)
+        name: Nagdroid (APK)
         path: |
           ./app/build/outputs/apk/debug/app-debug.apk
     - name: Store generated DEX file
       uses: actions/upload-artifact@v2
       with:
-        name: Mitobi (DEX)
+        name: Nagdroid (DEX)
         path: |
           ./lib/build/outputs/dex/debug/classes.dex

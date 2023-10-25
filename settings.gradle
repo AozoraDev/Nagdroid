@@ -13,6 +13,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "Mitobi"
+rootProject.name = "Nagdroid"
 
 include ":app", ":lib"

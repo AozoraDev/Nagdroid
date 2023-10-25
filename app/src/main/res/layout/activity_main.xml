@@ -17,7 +17,9 @@
              android:layout_width="match_parent"
              android:background="?attr/colorPrimary"
              app:popupTheme="@style/Theme.PopupOverlay"
-             android:id="@+id/toolbar" />
+             android:id="@+id/toolbar">
+
+        </Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -27,11 +29,51 @@
          android:gravity="center"
          android:orientation="vertical">
 
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:orientation="horizontal">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:text="Saved: " />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:id="@+id/saved"
+                 android:text="0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:orientation="horizontal">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:text="Current: " />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:id="@+id/current"
+                 android:text="0" />
+
+        </LinearLayout>
+
+        <View
+             android:layout_height="10dp"
+             android:layout_width="wrap_content" />
+
         <Button
              android:layout_height="wrap_content"
              android:layout_width="wrap_content"
              android:id="@+id/show"
-             android:text="Show Mito" />
+             android:text="Show Nagdroid" />
 
     </LinearLayout>
 

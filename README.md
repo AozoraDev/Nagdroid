@@ -19,7 +19,11 @@ move-result-object vA
 5. Rebuild the APK using apktool and then sign it using jarsigner (using debug keystore is recommended).
 
 ## Documentation
-TODO
+- `showAppIcon(Z)Lid/aozora/nagdroid/Nagdroid;` - Display the app icon within the dialog. `0x0` (default) will not displaying the app icon, `0x1` will displaying the app icon.
+- `showAppName(Z)Lid/aozora/nagdroid/Nagdroid;` - Display the app label within the dialog. `0x0` will not displaying the app label. `0x1` (default) will displaying the app label.
+- `forceMessageLang(Ljava/lang/String;)Lid/aozora/nagdroid/Nagdroid;` - Force the dialog to use message from the specific language. Only accept ISO-639 format. If the language is not available, the dialog will use English instead.
+- `show()Landroid/app/AlertDialog;` - Show the dialog if the time has comes.
+
 ## License
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
